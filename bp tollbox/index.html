@@ -1,0 +1,599 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <!-- <title></title> -->
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+    <!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+
+    <!-- CSS Reset -->
+    <style type="text/css">
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Forces Outlook.com to display emails full width. */
+        .ExternalClass {
+            width: 100%;
+        }
+
+        /* What is does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        table table table {
+            table-layout: auto;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+        .yshortcuts a {
+            border-bottom: none !important;
+        }
+
+        /* What it does: Another work-around for iOS meddling in triggered links. */
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+        }
+    </style>
+
+    <!-- Progressive Enhancements -->
+    <style type="text/css">
+
+        /* Media Queries */
+        @media screen and (max-width: 659px) {
+
+            .email-container {
+                width: 100% !important;
+            }
+
+            .cont {
+                background-color: #ffffff !important;
+
+            }
+
+            /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+            .fluid,
+            .fluid-centered {
+                max-width: 100% !important;
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            /* And center justify these ones. */
+            .fluid-centered {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+
+            .no_paddingLR {
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+            }
+
+            .no_padding {
+                padding: 0px !important;
+            }
+
+            .padding_bot {
+                padding-bottom: 40px !important;
+            }
+
+
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+
+            }
+
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+                padding-left: 40px !important;
+                padding-right: 40px !important;
+            }
+
+            .center-on-narrow2UL {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+
+            }
+
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+        }
+    </style>
+</head>
+
+<body bgcolor="#ffffff" width="100%" style="margin: 0;" yahoo="yahoo">
+<table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" height="100%" width="100%"
+       style="border-collapse:collapse; text-align: center;">
+    <tr valign="top">
+        <td>
+            <!-- <img src="aaa.jpg" alt="" border="0" style="width: 100%; max-width: 660px; height: auto; display:block; position: absolute; left:50%; transform: translateX(-50%); opacity:.3;"> -->
+
+            <!-- Visually Hidden Preheader Text : BEGIN -->
+
+            <div
+                    style="display:none!important;mso-hide:all!important;font-size:1px;color:#FFFFFF;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden">
+                &nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌
+                <wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌
+                <wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌
+                <wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌
+                <wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌
+                <wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌
+                <wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌
+                <wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌
+                <wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌
+                <wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌
+                <wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌
+            </div>
+
+            <!-- Visually Hidden Preheader Text : END -->
+
+
+            <!-- Email Body : BEGIN -->
+            <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#FFFFFF" width="660"
+                   class="email-container">
+
+                <!-- Email Body : START -->
+                <tr valign="top">
+                    <td align="center" valign="top" style="padding: 0px;" bgcolor="#FFFFFF">
+
+
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff">
+                            <tr valign="top">
+                                <td style="padding: 0px; text-align: left; font-size: 5px;line-height: 5px; mso-line-height-rule: exactly"
+                                    valign="top">
+                                    <img class="stack-column-center" src="strip.png"
+                                         alt="strip" border="0"
+                                         style="width: 100%; max-width: 660px; height: auto; display:block;">
+                                </td>
+                            </tr>
+                        </table>
+
+
+                        <table dir="ltr" valign="top" cellspacing="0" cellpadding="0" border="0" width="100%"
+                               bgcolor="#ffffff">
+                            <tr valign="top">
+                                <td width="50%" class="stack-column-center" style="padding: 0px; text-align: left"
+                                    valign="top">
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                        <tr valign="top">
+                                            <td style="padding: 0px; padding-left: 20px; padding-top: 30px; text-align: left"
+                                                valign="top">
+                                                <a href="https://example.com/" target="_blank">
+                                                    <img src="fs.png" alt="header_image" border="0"
+                                                         style="width:100%; max-width: 224px; height: auto; display:block;">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                                <td width="50%" class="stack-column-center" valign="middle" bgcolor="#ffffff">
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff">
+                                        <tr valign="middle">
+                                            <td class="center-on-narrow"
+                                                style="padding: 50px 20px 36px 0px; text-align: right"
+                                                align="right">
+                                                <a href="https://%24cantread%24/" target="_blank"
+                                                   style="text-decoration: none; font-family: 'Arial';
+                              font-style: normal;font-weight: 400;font-size: 13px;line-height: 18px; text-align: right; letter-spacing: 0.1px;color: #000000;">
+                                                    Masz problemy z wyświetleniem<br> tej wiadomości e-mail?<br><span
+                                                        style="text-decoration: underline;">Wyświetl w przeglądarce internetowej</span></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#ffffff">
+                            <tr align="center" valign="top">
+                                <td width="100%" class="stack-column-center">
+                                    <table cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" width="100%">
+                                        <tr align="center" valign="top">
+                                            <td width="100%" style="padding: 0px; text-align: left" align="left">
+                                                <img src="header.png"
+                                                     alt="Gracias por tu interés en nuestras tarjetas para empresas y profesionales."
+                                                     border="0"
+                                                     style="width:100%; max-width: 660px; height: auto; display: block">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- row start -->
+                        <table dir="ltr" valign="top" cellspacing="0" cellpadding="0" border="0" width="100%"
+                               bgcolor="#ffffff">
+                            <tr valign="top">
+                                <td width="100%" class="stack-column-center" style="padding: 0px; text-align: left"
+                                    valign="top">
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                        <tr valign="top">
+                                            <td class=""
+                                                style="text-align: left; margin: 0; padding: 40px 10px 50px 10px; text-decoration: none; font-family: 'Arial', Arial, sans-serif; mso-line-height-rule: exactly; font-style: normal; font-weight: 400; font-size: 16px; line-height: 24px; color: #252530; letter-spacing: -0.3px;">
+                                                <p style="font-size: 24px; line-height: 24px; color: #009900">
+                                                    Dzień dobry,
+                                                </p>
+                                                <p>
+                                                    dziękujemy za zainteresowanie urządzeniem pokładowym bp Tollbox dla EETS.
+                                                </p>
+                                                <p style="color: #009900; font-weight: bold">
+                                                    Nasz konsultant skontaktuje się z Państwem w ciągu jednego dnia roboczego, aby podczas pogłębionego wywiadu poznać specyfikę i potrzeby Państwa floty. Dzięki temu będziemy mogli przedstawić Państwu rozwiązania i produkty, które najlepiej na nie odpowiedzą.
+                                                </p>
+                                                <p>
+                                                    Jeśli masz jakieś pytania, skontaktuj się z naszym Biurem Obsługi Klienta. <br>
+                                                    <span style="color: #009900; font-weight: bold">+48 221040053</span>
+                                                    nr tel. <a href="mailto:bpplus@at.bp.com"
+                                                                style="color: #009900; font-weight: bold; text-decoration: none;"><span
+                                                        style="color: #009900; font-weight: bold">karty@bp.com</span></a> e-mail.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- row end -->
+
+
+                        <!-- spacer hr start-->
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%" height="1">
+                            <tr align="center" valign="top">
+                                <td class="stack-column-center" style="padding: 0px; background: #DBDBDB;">
+                                    <img src="spacer.png" alt="" border="0"
+                                         style="width: 100%; height: 1px; max-width: 1px; display: block;"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- spacer hr end-->
+
+
+                        <!-- row start -->
+                        <table dir="ltr" valign="top" cellspacing="0" cellpadding="0" border="0" width="100%"
+                               bgcolor="#ffffff">
+                            <tr valign="top">
+                                <td width="100%" class="stack-column-center" style="padding: 0px; text-align: left"
+                                    valign="top">
+
+                                    <!-- spacer empty start -->
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#FFFFFF">
+                                        <tr align="center" valign="top">
+                                            <td class="stack-column-center"
+                                                style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;padding-top:30px">
+                                                <img src="spacer1.png" alt="" border="0"
+                                                     style="width: 100%; max-width: 1px; height: auto; display:block;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- spacer empty end-->
+
+
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                        <tr valign="top">
+                                            <td class=""
+                                                style="text-align: left; margin: 0; padding: 0px 10px 20px 10px; text-decoration: none; font-family: 'Arial', Arial, sans-serif; mso-line-height-rule: exactly; font-style: normal; font-weight: 400; font-size: 16px; line-height: 24px; color: #252530; letter-spacing: -0.3px;">
+                                                <p style="font-size: 36px;  line-height: 36px; color: #009900"> Co zyskasz?</p>
+                                                <p style="font-size: 24px; 
+                                                line-height: 24px; color: #009900">
+                                                Jedno urządzenie, wiele możliwości.</p>
+                                                <p>
+                                                    Uprość codzienne operacje i zapewnij kierowcom większą wygodę na drodze, kontroluj koszty i ogranicz formalności. Poznaj zalety urządzenia bp Tollbox dla EETS:
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- row end -->
+
+
+                        <!-- 2 col start -->
+                        <table dir="ltr" valign="top" cellspacing="0" cellpadding="0" border="0" width="100%"
+                               bgcolor="#FFFFFF">
+                            <tr valign="top">
+
+                                <td width="50%" class="stack-column-center" style="padding: 0px; text-align: left"
+                                    valign="top">
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+                                        <tr valign="top">
+                                            <td align="center" class="center-on-narrow2UL"
+                                                style="text-align: center; margin: 0; padding: 10px 15px 10px 15px;"
+                                                valign="top">
+                                                <img class="" src="icon-globe.png" alt="" border="0" width="141"
+                                                     height="140"
+                                                     style="width: 141px; height: 140px; display: block; margin-left: auto; margin-right: auto;">
+                                                <div style="text-decoration: none; font-family: 'Arial', Arial, sans-serif; mso-line-height-rule: exactly; font-style: normal; font-weight: 400; font-size: 16px; line-height: 26px; color: #004F00; letter-spacing: 0.1px;">
+                                                    <p style="font-size: 20px; color: #007F00; margin-top: 8px;">
+                                                        Szeroki zasięg</p>
+                                                    <p style="color: #666">
+                                                        Obsługuj trasy biegnące przez 14 krajów działających w systemie EETS. Planuj trasy w 4 krajach oczekujących na uruchomienie EETS w najbliższym czasie.
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                                <td width="50%" class="stack-column-center" style="padding: 0px; text-align: left"
+                                    valign="top">
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                        <tr valign="top">
+                                            <td align="center"
+                                                style="text-align: center; margin: 0; padding: 10px 15px 10px 15px; "
+                                                valign="top">
+                                                <img class="" src="icon-chat.png" alt="" border="0" width="140"
+                                                     height="140"
+                                                     style="width: 140px; height: 140px; display: block; margin-left: auto; margin-right: auto;">
+                                                <div style="text-decoration: none; font-family: 'Arial', Arial, sans-serif; mso-line-height-rule: exactly; font-style: normal; font-weight: 400; font-size: 16px; line-height: 26px; color: #004F00; letter-spacing: 0.1px;">
+                                                    <p style="font-size: 20px; color: #007F00;  margin-top: 8px;">
+                                                        Łatwość obsługi</p>
+                                                    <p style="color: #666">
+                                                        Steruj urządzeniem za pomocą komend głosowych.
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                            </tr>
+                        </table>
+                        <!-- 2 col end -->
+
+                        <!-- 2 col start -->
+                        <table dir="ltr" valign="top" cellspacing="0" cellpadding="0" border="0" width="100%"
+                               bgcolor="#FFFFFF">
+                            <tr valign="top">
+
+                                <td width="50%" class="stack-column-center" style="padding: 0px; text-align: left"
+                                    valign="top">
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                        <tr valign="top">
+                                            <td align="center"
+                                                style="text-align: center; margin: 0; padding: 10px 15px 10px 15px;"
+                                                valign="top">
+                                                <img class="" src="icon-cloud.png" alt="" border="0" width="140"
+                                                     height="140"
+                                                     style="width: 140px; height: 140px; display: block; margin-left: auto; margin-right: auto;">
+                                                <div style="text-decoration: none; font-family: 'Arial', Arial, sans-serif; mso-line-height-rule: exactly; font-style: normal; font-weight: 400; font-size: 16px; line-height: 26px; color: #004F00; letter-spacing: 0.1px;">
+                                                    <p style="font-size: 20px; color: #007F00; margin-top: 8px;">
+                                                        Bezprzewodowe aktualizacje
+                                                    </p>
+                                                    <p style="color: #666">
+                                                        Pobieraj automatyczne aktualizacje dzięki kompatybilności z siecią 4G.
+ </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                                <td width="50%" class="stack-column-center" style="padding: 0px; text-align: left"
+                                    valign="top">
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                        <tr valign="top">
+                                            <td align="center"
+                                                style="text-align: center; margin: 0; padding: 10px 15px 10px 15px;"
+                                                valign="top">
+                                                <img class="" src="icon-shapes.png" alt="" border="0" width="141"
+                                                     height="140"
+                                                     style="width: 141px; height: 140px; display: block; margin-left: auto; margin-right: auto;">
+                                                <div style="text-decoration: none; font-family: 'Arial', Arial, sans-serif; mso-line-height-rule: exactly; font-style: normal; font-weight: 400; font-size: 16px; line-height: 26px; color: #004F00; letter-spacing: 0.1px;">
+                                                    <p style="font-size: 20px; color: #007F00;  margin-top: 8px;">
+                                                        Monitorowanie w czasie rzeczywistym</p>
+                                                    <p style="color: #666">
+                                                        Geolokalizuj flotę dzięki aktualizacjom GPS z dokładnością co do minuty w Pakiecie Advanced.
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                            </tr>
+                        </table>
+                        <!-- 2 col end -->
+
+
+                        <!-- spacer empty start -->
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#FFFFFF">
+                            <tr align="center" valign="top">
+                                <td class="stack-column-center"
+                                    style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;padding-top:20px">
+                                    <img src="spacer1.png" alt="" border="0"
+                                         style="width: 100%; max-width: 1px; height: 1px; display:block;">
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- spacer empty end-->
+
+                        <!-- spacer hr start-->
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%" height="1">
+                            <tr align="center" valign="top">
+                                <td class="stack-column-center" style="padding: 0px; background: #DBDBDB;">
+                                    <img src="spacer.png" alt="" border="0"
+                                         style="width: 100%; height: 1px; max-width: 1px; display: block;"
+                                    />
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- spacer hr end-->
+
+                        <!-- spacer empty start -->
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#FFFFFF">
+                            <tr align="center" valign="top">
+                                <td class="stack-column-center"
+                                    style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;padding-top:45px">
+                                    <img src="spacer1.png" alt="" border="0"
+                                         style="width: 100%; max-width: 1px; height: auto; display:block;">
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- spacer empty end-->
+
+
+                        <!-- footer start -->
+                        <table dir="ltr" cellspacing="0" cellpadding="0" border="0" width="100%" align="right"
+                               style="text-align: right;">
+                            <tr valign="top">
+
+                                <td width="50%" class="stack-column-center" valign="top" bgcolor="#FFFFFF"
+                                    style="padding: 0px; padding-bottom: 0px; text-align: right">
+                                    <img class="fluid-centered" src="bottom-img.png" alt="" border="0" width="315"
+                                         height="320"
+                                         style="width: 100%; max-width: 315px; height: auto; display: block; ">
+                                </td>
+                                <td width="50%" dir="ltr" class="stack-column-center" valign="top" align="right"
+                                    bgcolor="#FFFFFF">
+                                    <img src="footer-text.png" alt="" border="0" width="373" height="195"
+                                         style="width: 100%; max-width: 373px; height: auto;">
+                                    <div class="stack-column-center" style="text-align: right; margin-top: 30px;">
+                                        <a href="https://example.com/" target="_blank"
+                                           style="text-decoration: none; text-align: center;">
+                                            <img src="footer-button.png" alt="" border="0" width="205" class=""
+                                                 style="width: 100%; max-width: 205px; height: auto; text-align: right;">
+                                        </a>
+                                    </div>
+                                    <div class="stack-column-center" style="text-align: right; margin-top: 30px;">
+                                        <img src="bp-Fleet-Solutions.png" alt="" border="0" width="161" height="20"
+                                             style="width: 161px; max-width: 161px; height: auto; text-align: right;">
+                                    </div>
+                                </td>
+
+                            </tr>
+
+                        </table>
+                        <!-- footer end -->
+
+
+                    </td>
+                </tr>
+            </table>
+
+
+            <!-- spacer inv start-->
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td style="padding: 10px; background: #ffffff;">
+                        <p>&nbsp;</p>
+                    </td>
+                </tr>
+            </table>
+            <!-- spacer inv end-->
+
+
+            <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#F5F5F5" width="660"
+                   class="email-container">
+                <tr valign="top">
+                    <td align="center" valign="top" style="padding: 0px;" bgcolor="#F5F5F5">
+
+                        <!-- Email Footer : BEGIN -->
+
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#FBFBFB" width="660"
+                               class="email-container">
+                            <tr valign="top">
+                                <td style="padding: 35px 50px 10px 50px; text-align: center; text-decoration: none; display: block; font-family: 'Arial', Arial, sans-serif; mso-line-height-rule: exactly; font-style: normal; font-weight: 400; font-size: 14px; line-height: 24px; text-align: center; letter-spacing: 0.1px; color: #252530;">
+                                    Ta wiadomość została wysłana w imieniu B2Mobility (B2M), która jest w 100% spółką zależną grupy bp i jedynym emitentem kart paliwowych Aral i bp.
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <!-- <td
+                                  style="padding: 15px 20px 0px 20px; text-align: center; text-decoration: none; display: block; font-family: 'Arial', Arial, sans-serif; mso-line-height-rule: exactly; font-style: normal; font-weight: 400; font-size: 14px; line-height: 24px; text-align: center; letter-spacing: 0.105px; color: #252530;">
+                                  ©&nbsp;Copyright&nbsp;2023&nbsp;BP&nbsp;Europa&nbsp;SE<br>
+                                  BP&nbsp;Europa&nbsp;SE&nbsp;Zweigniederlassung
+                                  bp&nbsp;Austria&nbsp;|&nbsp;Am&nbsp;Belvedere&nbsp;10&nbsp;|&nbsp;1100&nbsp;Wien
+                                </td> -->
+                            </tr>
+                        </table>
+
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#FBFBFB" width="660"
+                               class="email-container">
+                            <tr valign="top">
+                                <td style="padding: 0px 10px 35px 10px; width: 100%; text-align: center;">
+                                    <a href="https://example.com/" target="_blank"
+                                       style="text-decoration: underline; font-family: 'Arial', Arial, sans-serif; mso-line-height-rule: exactly; font-style: normal; font-weight: 400; font-size: 13px; line-height: 24px; text-align: center; letter-spacing: 0.1px;color: #252530;">Strona internetowa B2M</a>&nbsp;
+                                    | &nbsp;<a href="https://example.com/" target="_blank"
+                                               style="text-decoration: underline; font-family: 'Arial', Arial, sans-serif; mso-line-height-rule: exactly; font-style: normal; font-weight: 400; font-size: 13px; line-height: 24px; text-align: center; letter-spacing: 0.105px;color: #252530;">Oświadczenie o ochronie prywatności</a>&nbsp;
+                                    |&nbsp;<a href="https://example.com/" target="_blank"
+                                              style="text-decoration: underline; font-family: 'Arial', Arial, sans-serif; mso-line-height-rule: exactly; font-style: normal; font-weight: 400; font-size: 13px; line-height: 24px; text-align: center; letter-spacing: 0.105px;color: #252530;">Informacje prawne</a>
+                                    |&nbsp;<br><a href="https://example.com/" target="_blank"
+                                              style="text-decoration: underline; font-family: 'Arial', Arial, sans-serif; mso-line-height-rule: exactly; font-style: normal; font-weight: 400; font-size: 13px; line-height: 24px; text-align: center; letter-spacing: 0.105px;color: #252530;">Zrezygnuj z subskrypcji</a>
+
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+
+
+        </td>
+    </tr>
+</table>
+</body>
+
+</html>
